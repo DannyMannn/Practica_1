@@ -56,18 +56,8 @@ public class AdministradorPrincipal extends Administrador{
     public int getNumAdminstradoresPrincipales(){
         return numAdminstradoresPrincipales;
     }
-    public static String[] obtenerMenu(){
-        String[] menu = new String[] {
-                "[1]Dar de alta a un empleado.",
-                "[2]Eliminar un empleado.",
-                "[3]Modificar a un empleado.",
-                "[4]Ver datos de un empleado.",
-                "[5]Ver informe de un empleado.",
-                "[6]Cambiar tienda de un empleado.",
-                "[7]Asignar vacaciones a un empleado.",
-        };
-        return menu;
-    }
+
+
 
     public String darAltaEmpleado(Empleado empleado){
         return "El empleado se ha dado de alta.";

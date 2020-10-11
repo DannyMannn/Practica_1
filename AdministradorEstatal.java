@@ -36,25 +36,6 @@ public class AdministradorEstatal extends Administrador {
     public int getNumAdminstradoresEstatales(){
         return numAdminstradoresEstatales;
     }
-    public static String[] obtenerMenu(){
-         String[] menu = new String[] {
-                "[1]Dar de alta a un empleado ordinario",
-                "[2]Dar de alta a un operador",
-                "[3]Eliminar un empleado ordinario",
-                "[4]Eliminar un operador",
-                "[5]Modificar a un empleado ordinario",
-                "[6]Modificar a un operador",
-                "[7]Ver datos de un empleado ordinario",
-                "[8]Ver datos de un operador",
-                "[9]Ver informe de un empleado ordinario",
-                "[10]Ver informe de un operador",
-                "[11]Cambiar tienda de un empleado ordinario",
-                "[12]Cambiar tienda de un operador",
-                "[13]Asignar vacaciones a un empleado ordinario",
-                "[14]Asignar vacaciones a un operador"
-        };
-        return menu;
-    }
 
     public String realizarOperacion(int operacionSeleccionada,Operador operador){
         switch(operacionSeleccionada){
