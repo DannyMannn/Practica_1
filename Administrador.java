@@ -3,7 +3,7 @@ package com.TiendaDepartamental;
 import java.nio.file.AccessDeniedException;
 import java.util.Calendar;
 
-public class Administrador extends Empleado {
+public abstract class Administrador extends Empleado {
     public String modificarInformacionPersonal(){
         return "Datos personales modificados";
     }

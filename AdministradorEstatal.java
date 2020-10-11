@@ -56,6 +56,48 @@ public class AdministradorEstatal extends Administrador {
         return menu;
     }
 
+    public String realizarOperacion(int operacionSeleccionada,Operador operador){
+        switch(operacionSeleccionada){
+            case 2:
+                return this.darAltaEmpleado(operador);
+            case 4:
+                return this.eliminarEmpleado(operador);
+            case 6:
+                return this.modificarEmpleado(operador);
+            case 8:
+                return this.verDatosEmpleado(operador);
+            case 10:
+                return this.verInformeEmpleado(operador);
+            case 12:
+                return  this.cambiarTiendaEmpleado(operador);
+            case 14:
+                return this.asignarVacacionesEmpleado(operador);
+            default:
+                return "Operacion invalida";
+        }
+    }
+
+    public String realizarOperacion(int operacionSelecionada, EmpleadoOrdinario empleadoOrdinario){
+        switch(operacionSelecionada){
+            case 1:
+                return this.darAltaEmpleado(empleadoOrdinario);
+            case 3:
+                return this.eliminarEmpleado(empleadoOrdinario);
+            case 5:
+                return this.modificarEmpleado(empleadoOrdinario);
+            case 7:
+                return this.verDatosEmpleado(empleadoOrdinario);
+            case 9:
+                return this.verInformeEmpleado(empleadoOrdinario);
+            case 11:
+                return this.cambiarTiendaEmpleado(empleadoOrdinario);
+            case 13:
+                return this.asignarVacacionesEmpleado(empleadoOrdinario);
+            default:
+                return "Operacion Invalida";
+        }
+    }
+
     public String darAltaEmpleado(EmpleadoOrdinario empleado){
         return "El empleado se ha dado de alta.";
     }

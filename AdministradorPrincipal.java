@@ -32,6 +32,26 @@ public class AdministradorPrincipal extends Administrador{
         numAdminstradoresPrincipales++;
     }
 
+    public String realizarOperacion(int OperacionSelecionada, Empleado e){
+        switch(OperacionSelecionada){
+            case 1:
+                return darAltaEmpleado(e);
+            case 2:
+                return eliminarEmpleado(e);
+            case 3:
+                return modificarEmpleado(e);
+            case 4:
+                return verDatosEmpleado(e);
+            case 5:
+                return verInformeEmpleado(e);
+            case 6:
+                return cambiarTiendaEmpleado(e);
+            case 7:
+                return asignarVacacionesEmpleado(e);
+            default:
+                return "Operacion Invalida";
+        }
+    }
 
     public int getNumAdminstradoresPrincipales(){
         return numAdminstradoresPrincipales;
